@@ -15,10 +15,22 @@
       - Constructor has Same Name as the Class Name
       - Doesn't Return Anything
       - Used to alocate memrory for OBJECT
+      - Creates an instance(Obj) in the Heap Memory
 
- 7) If 2 Class Present
 
- 8) Platform-Independent  ---->  is that the java compiled code(byte code) can run on all operating systems .       
+ 7) If 2 Class Present then you have to use public keyboard before the class having MAIN Method, then name the file with that
+               name only(otherwise it will get confuse which class is having the MAIN Method).
+
+ 8)   FEATURES   ::
+      - Platform-Independent  ---->  is that the Java Compiled Code(byte code) can run on all operating systems .    
+      - Multi Threaded        ---->  Ability to run multiple threads concurrently at the same time .
+      - Portable              ---->  to carry the Java bytecode to any platform .   
+
+
+ 9)   Static Method in Java   -->   * Access static method() and fields using Class Name
+                                    * NO NEED  to Create Object
+
+
 
 
   6) Compile  :  javac     
