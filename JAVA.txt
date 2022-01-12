@@ -1,0 +1,24 @@
+
+                                                   ----------------------         JAVA            ---------------------
+
+ 1)  Class Name should be same as File name
+ 2)  If we use 
+                 class ABC then file name can be either           ABC.java     or      anything.java
+ 
+ 3)  If we use 
+                 public class ABC  (that contains psvm) then file name                  MUST BE   ABC.java                                                   
+  
+ 4) class ABC    <---- present, its a Default Class
+
+ 5) Constructor
+      - JVM provides a Default constructor of class ABC always present
+      - Constructor has Same Name as the Class Name
+      - Doesn't Return Anything
+      - Used to alocate memrory for OBJECT
+
+ 7) If 2 Class Present
+
+ 8) Platform-Independent  ---->  is that the java compiled code(byte code) can run on all operating systems .       
+
+
+  6) Compile  :  javac     

@@ -27,4 +27,4 @@ class Main {
 
 // is a Constructor,that creates an instance(Obj) in the Heap Memory
 // new keyword blows memory
-new A();
+// new A();

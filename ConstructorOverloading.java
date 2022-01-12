@@ -1,0 +1,29 @@
+
+class ConstructorOverloading {
+
+    ConstructorOverloading() {
+        System.out.println("This is a Self - Constructor");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("\nHello Im the Main Function");
+
+        // Constructor
+        ConstructorOverloading Object0 = new ConstructorOverloading(); // Self Constructor
+        House Object1 = new House(10);
+        House Object2 = new House(8, "Crimson");
+
+        System.out.println(Object1);
+    }
+
+}
+
+class House {
+    House(int x) {
+        System.out.println("Received " + x + " as props.");
+    }
+
+    House(int x, String color) {
+        System.out.println(x + " " + color + " Curtains");
+    }
+}
