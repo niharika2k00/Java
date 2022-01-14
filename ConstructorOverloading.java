@@ -27,7 +27,9 @@ class ConstructorOverloading {
 }
 
 class House {
-    House(int x) {
+
+    // Parameterized Constructor
+    public House(int x) {
         System.out.println("Received " + x + " as props.");
     }
 

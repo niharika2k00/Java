@@ -27,8 +27,8 @@
       - Portable              ---->  to carry the Java bytecode to any platform .   
 
 
- 9)   Static Method in Java   -->   * Access static method() and fields using Class Name
-                                    * NO NEED  to Create Object
+ 9)   Static Method in Java   -->   * Access static method() and fields using Class Name       [ ClassName.methodName(args) ]
+                                    * NO NEED  to Create Object/Instance of the Class
 
 
 
