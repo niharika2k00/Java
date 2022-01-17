@@ -29,8 +29,17 @@
 
  9)   Static Method in Java   -->   * Access static method() and fields using Class Name       [ ClassName.methodName(args) ]
                                     * NO NEED  to Create Object/Instance of the Class
+                                    * We cannot print Non - Static Variables inside Static Methods
 
 
 
 
-  6) Compile  :  javac     
+
+
+  6) STEPS ::    * javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file
+                    with the same name as that of the Main Class that contains the MAIN FUNCTION in Java. 
+
+
+  
+          Compile  :  javac  <file_name>
+                      java <class_name>   

@@ -45,9 +45,6 @@ public class InheritanceOOP {
 }
 
 /*
- * -- when we are callling the OBJ of SubClass then it calls the (SubClass +
- * SuperClass) Default Const.
- * -- use Super(parameter); to call the parameterized constructor for Super
- * Class
- * 
+ * -- when we are callling the OBJ of SubClass then it calls the (SubClass + SuperClass) Default Const.
+ *  -- use Super(parameter); to call the parameterized constructor for Super Class
  */
