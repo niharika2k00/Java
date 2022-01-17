@@ -28,6 +28,7 @@ class Bunglow {
     int room;
     String color;
 
+    // Static Method
     public static void Country(String name) {
         place = name;
     }
