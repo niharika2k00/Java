@@ -3,7 +3,7 @@ public class Method {
 
     public static void main(String[] args) {
 
-        // Static Method in java --> Access static method() and fields using Class Name
+        // Static Method in java --> Access static method() and fields using Class Name (without creating OBJECT)
         Bunglow.Country(" New Zealand ");
         System.out.println(" Coming from the Static Method  ==>  " + Bunglow.place);
 

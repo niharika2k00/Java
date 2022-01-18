@@ -30,7 +30,7 @@ class B extends A {
 
 }
 
-public class InheritanceOOP {
+public class Inheritance_OOP {
 
     public static void main(String[] args) {
         B obj = new B(); // Create an Object of class B
