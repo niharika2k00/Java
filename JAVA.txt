@@ -8,7 +8,7 @@
  3)  If we use 
                  public class ABC  (that contains psvm) then file name                  MUST BE   ABC.java                                                   
   
- 4) class ABC    <---- present, its a Default Class
+ 4) class ABC    <----  present, its a Default Class(means having default access modifier)
 
  5) Constructor
       - JVM provides a Default constructor of class ABC always present
@@ -20,11 +20,16 @@
 
  7) If 2 Class Present then you have to use public keyboard before the class having MAIN Method, then name the file with that
                name only(otherwise it will get confuse which class is having the MAIN Method).
+               
 
  8)   FEATURES   ::
       - Platform-Independent  ---->  is that the Java Compiled Code(byte code) can run on all operating systems .    
       - Multi Threaded        ---->  Ability to run multiple threads concurrently at the same time .
       - Portable              ---->  to carry the Java bytecode to any platform .   
+      
+      - Encapsulation         ---->  Wrapping up of data and information under a single unit
+      - Polymorphism          ---->  Method Overriding  +  Method OverLoading
+      - Inheritance           ---->  Child/SubClass  inherits the METHODS of the Parent Class
 
 
  9)   Static Method in Java   -->   * Access static method() and fields using Class Name       [ ClassName.methodName(args) ]
@@ -33,7 +38,7 @@
 
 
 
-
+ 10)  
 
 
   6) STEPS ::    * javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file

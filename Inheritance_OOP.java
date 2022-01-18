@@ -1,5 +1,12 @@
-
 // https://www.javatpoint.com/inheritance-in-java
+public class Inheritance_OOP {
+    public static void main(String[] args) {
+        B obj = new B(); // Create an Object of class B
+        int len = obj.joinString("\nHappy ", "Coding !");
+        System.out.println("Concatenated String Length: " + len);
+        B checkPara = new B(10);
+    }
+}
 
 // Parent / Super Class
 class A {
@@ -27,23 +34,7 @@ class B extends A {
         super(num);
         System.out.println("Parameterized Constructor of Class B " + num);
     }
-
 }
-
-public class Inheritance_OOP {
-
-    public static void main(String[] args) {
-        B obj = new B(); // Create an Object of class B
-
-        int len = obj.joinString("\nHappy ", "Coding !");
-        System.out.println("Concatenated String Length: " + len);
-
-        B checkPara = new B(10);
-
-    }
-
-}
-
 /*
  * -- when we are callling the OBJ of SubClass then it calls the (SubClass + SuperClass) Default Const.
  *  -- use Super(parameter); to call the parameterized constructor for Super Class
