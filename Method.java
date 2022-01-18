@@ -64,7 +64,7 @@ class Student {
     }
 
     public void createStudent() {
-        System.out.println("New Student created :  \n\t" + name + "\t" + roll + "\t" + passion);
+        System.out.println("New Student created :  \t" + name + "\t" + roll + "\t" + passion);
     }
 
 }
