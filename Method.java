@@ -16,9 +16,16 @@ public class Method {
         objA.room = 8;
         objA.color = "Crimson";
         objA.design();
-    }
 
+        System.out.println("\n\n---------------------------------------------------------");
+        System.out.println("---------------------------------------------------------");
+        Student s1 = new Student("John Doe", 85426, "Coder");
+        Student s2 = new Student("Genelia", 12537, "Dancer");
+        s1.createStudent();
+        s2.createStudent();
+    }
 }
+
 
 class Bunglow {
 
@@ -28,7 +35,7 @@ class Bunglow {
     int room;
     String color;
 
-    // Static Method
+    // Static Method - always contains static variables
     public static void Country(String name) {
         place = name;
     }
@@ -39,6 +46,25 @@ class Bunglow {
 
     public void design() {
         System.out.println("\n It contains " + balcony + " Balcony And " + room + " Rooms  of " + color + " color. ");
+    }
+
+}
+
+
+class Student {
+    String name;
+    int roll;
+    String passion;
+
+    // Constructor
+    Student(String name, int roll, String passion) {
+        this.name = name;
+        this.roll = roll;
+        this.passion = passion;
+    }
+
+    public void createStudent() {
+        System.out.println("New Student created :  \n\t" + name + "\t" + roll + "\t" + passion);
     }
 
 }
