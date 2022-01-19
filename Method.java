@@ -23,6 +23,9 @@ public class Method {
         Student s2 = new Student("Genelia", 12537, "Dancer");
         s1.createStudent();
         s2.createStudent();
+
+        System.out.println(s1);
+
     }
 }
 
@@ -67,4 +70,10 @@ class Student {
         System.out.println("New Student created :  \t" + name + "\t" + roll + "\t" + passion);
     }
 
+    // @override
+    //overriding the toString() method of JVM
+    public String toString() {
+        System.out.println("$" + this.roll + this.name);
+        return ("$" + this.roll + this.name);
+    }
 }
