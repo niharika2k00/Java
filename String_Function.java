@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class stringFunction {
+public class String_Function {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
