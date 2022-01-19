@@ -2,9 +2,6 @@
  * @lc app=leetcode id=344 lang=java
  *
  * [344] Reverse String
- * 
- * https://leetcode.com/problems/reverse-string/
- * 
  */
 
 // @lc code=start
