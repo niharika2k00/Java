@@ -1,0 +1,57 @@
+
+
+                                  
+
+            Collections class is a member of the Java Collections Framework. The java.util.Collections package is the package that contains the Collections class.
+ 
+
+ //  Array Initialization
+    int arr[] = new int[1001];
+
+ 1)  SCANNER CLASS    =====> 
+                                    Scanner sc = new Scanner(System.in);
+                                              sc.nextInt(); 
+                                              sc.nextInt()
+                                              nextBoolean()
+                                              nextFloat()
+
+
+ 2)  BUFFER READER CLASS    =====> 
+                                     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                                            String str  =  br.ReadLine();
+                                            int read()   <- It is used for reading a single character.
+                                            int ele = Integer.parseInt(br.readLine());     //  take Integer Input
+
+
+     (Unsynchronized) - fast
+ 3)  ARRAY_LIST  =====> 
+                            ArrayList<Integer> arrLi  =  new ArrayList<Integer>(n);
+                                            
+                                                 .size()
+                                            arrLi.add(ele)
+                                            arrLi.add(index ,  element)
+                                            .addAll( Collection c)         // arguement having another arr that will append with the Original oen.
+                                            addAll(Index , Collection)
+                                            .remove(index)
+                                            .remove(object)                // Ex arrLi.remove("Summer") ;  removing word from List
+                                            .get(integer)                                            
+                                            .contains()
+
+ 4) VECTOR      ======>
+
+
+     (Unsynchronized) - FAST  as multiple threads can access the code at a SAME TIME 
+ 5) HASH MAP ======>         
+                             Syntax : Hashtable<Key, Value> ht = new Hashtable<Key, Value>();
+                              
+                              HashMap<String, Integer> map = new HashMap<>();
+
+                                            .size()
+                                            .put(K key, V value)
+                                            .contains(Object value)                                   
+                                            .containsKey(Object key)
+                                            .elements()
+                                            .get(Object key)
+                                            .remove​(Object key, Object value)
+                                            .replace(K key, V value)
+                                            .values()

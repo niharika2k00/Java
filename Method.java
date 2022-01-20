@@ -70,7 +70,7 @@ class Student {
         System.out.println("New Student created :  \t" + name + "\t" + roll + "\t" + passion);
     }
 
-    // @override
+    @Override
     //overriding the toString() method of JVM
     public String toString() {
         System.out.println("$" + this.roll + this.name);
