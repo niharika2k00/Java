@@ -5,8 +5,24 @@
             Collections class is a member of the Java Collections Framework. The java.util.Collections package is the package that contains the Collections class.
  
 
- //  Array Initialization
-    int arr[] = new int[1001];
+   ___________________________________
+ // Array Initialization  1D  &  2D
+  -----------------------------------
+
+     int arr[] = new int[n + 1];         
+   
+
+ ___________________________________
+ //  Sorting a 2D array
+  -----------------------------------
+
+    Arrays.sort(contests, (a, b) -> Integer.compare(b[0],a[0])); //decreasing order
+    
+    Arrays.sort(contests, (a, b) -> Integer.compare(a[0],b[0]); //increasing order
+    Arrays.sort(myArr, (a, b) -> a[0] - b[0]);
+
+
+
 
  1)  SCANNER CLASS    =====> 
                                     Scanner sc = new Scanner(System.in);
