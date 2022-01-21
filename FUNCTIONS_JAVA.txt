@@ -71,3 +71,22 @@
                                             .remove​(Object key, Object value)
                                             .replace(K key, V value)
                                             .values()
+
+
+         for (i = 0; i < len; i++) {
+            if (hashMap.containsValue(nums[i]))
+                hashMap.put(i, nums[i]); //  GET the previous Count +  1
+            else
+                hashMap.put(nums[i], 1);
+        }
+
+
+
+
+
+
+
+
+
+
+
