@@ -10,7 +10,7 @@
   -----------------------------------
 
      int arr[] = new int[n + 1];         
-   
+   For array and String ===> length()
 
  ___________________________________
  //  Sorting a 2D array
@@ -22,6 +22,7 @@
     Arrays.sort(myArr, (a, b) -> a[0] - b[0]);
 
 
+    int MaxElement = Arrays.stream(piles).max().getAsInt();
 
 
  1)  SCANNER CLASS    =====> 
