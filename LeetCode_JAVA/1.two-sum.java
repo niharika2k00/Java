@@ -5,7 +5,7 @@ import java.util.HashMap;
  *
  * [1] Two Sum
  */
-
+//         Any 2 number from the list having , whose addition is == TARGET
 // @lc code=start
 class Solution {
     public int[] twoSum(int[] nums, int target) {
