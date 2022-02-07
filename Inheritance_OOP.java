@@ -4,9 +4,11 @@ public class Inheritance_OOP {
         B obj = new B(); // Create an Object of class B
         int len = obj.joinString("\nHappy ", "Coding !");
         System.out.println("Concatenated String Length: " + len);
+
         B checkPara = new B(10);
     }
 }
+
 
 // Parent / Super Class
 class A {
@@ -24,6 +26,7 @@ class A {
     }
 }
 
+
 // Child / Sub Class
 class B extends A {
     public B() {
@@ -36,6 +39,6 @@ class B extends A {
     }
 }
 /*
- * -- when we are callling the OBJ of SubClass then it calls the (SubClass + SuperClass) Default Const.
+ * -- when we are calling the OBJ of SubClass then it calls the (SubClass + SuperClass) Default Const.
  *  -- use Super(parameter); to call the parameterized constructor for Super Class
  */

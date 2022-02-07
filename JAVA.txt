@@ -41,7 +41,9 @@
 
 
 
- 10)  
+ 10) Aggregation  --->   HAS A Relationship
+     Composition  --->   IS A PART OF Relationship
+     Interface    --->   IS A Relationship
 
 
   6) STEPS ::    * javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file

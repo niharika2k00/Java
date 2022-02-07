@@ -12,7 +12,7 @@
      int arr[] = new int[n + 1];         
    For array and String ===> length()
 
- ___________________________________
+  ___________________________________
  //  Sorting a 2D array
   -----------------------------------
 
@@ -23,6 +23,26 @@
 
 
     int MaxElement = Arrays.stream(piles).max().getAsInt();
+
+
+  ___________________________________
+   //  Iterating a 2D array
+  -----------------------------------
+
+     for(int i=0; i<arr.length; i++) {
+        for(int j=0; j<arr[i].length; j++) {
+            System.out.println("Values at arr["+i+"]["+j+"] is "+ arr[i][j]);
+        }
+    }
+
+
+   [For Each Loop]
+   
+    for (int[] u: uu) {
+        for (int elem: u) {
+        // Your individual element
+      }
+}
 
 
  1)  SCANNER CLASS    =====> 
@@ -54,6 +74,12 @@
                                             .get(integer)                                            
                                             .contains()
 
+ 
+                        Sort Ascending            :  Collections.sort(list);   
+                        Sort Reverse (Descending) :  Collections.sort(list, Collections.reverseOrder());    
+
+
+
  4) VECTOR      ======>
 
 
@@ -83,7 +109,7 @@
 
 
 
-
+ 6) LINKED - LIST    ========>        Node new_node = new Node(new_data);
 
 
 
