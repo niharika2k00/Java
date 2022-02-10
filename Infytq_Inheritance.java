@@ -24,7 +24,7 @@ class WirelessEarPlug extends EarPlug {
     }
 
     public void displayWireless() {
-        this.display();
+        this.display(); // accessing the Parent Method
         System.out.println(this.version);
     }
 }

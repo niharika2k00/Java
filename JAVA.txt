@@ -42,11 +42,11 @@
 
 
  10) Aggregation  --->   HAS A Relationship
-     Composition  --->   IS A PART OF Relationship
+     Composition  --->   IS A PART OF Relationship (both dependent)
      Interface    --->   IS A Relationship
 
 
-  6) STEPS ::    * javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file
+  11) STEPS ::    * javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file
                     with the same name as that of the Main Class that contains the MAIN FUNCTION in Java. 
 
 
@@ -55,4 +55,10 @@
                       java <class_name>   
 
 
+  12) The access level modifiers in Java are:
+
+           public - visible to all code
+           protected - visible to all code in the same package and to subclasses regardless of package
+           nothing (default) - visible to all code in the same package
+           private - visible only to code in the same class (including nested classes)
                       

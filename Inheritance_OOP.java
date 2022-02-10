@@ -12,6 +12,8 @@ public class Inheritance_OOP {
 
 // Parent / Super Class
 class A {
+    protected int x = 7400;
+
     public A() {
         System.out.println("\nClass A constructor ");
     }
@@ -48,6 +50,7 @@ class B extends A {
 
     public void display() {
         System.out.println("Displaying in  **   B  **");
+        System.out.println("Accessing Protected Variable  " + x + "  from Parent Class");
     }
 }
 

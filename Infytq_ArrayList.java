@@ -30,3 +30,12 @@ public class Infytq_ArrayList {
         }
     }
 }
+
+/* 
+      Methods of the ArrayList Data structure
+    ---------------------------------------------
+    
+    .get(2)                   =>   data at Index 2
+    .addAll( index , List)    =>   append full List in the given index
+    .set(3 , 12)              =>   modify data at Index 3
+*/
