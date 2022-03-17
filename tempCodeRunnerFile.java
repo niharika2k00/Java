@@ -1,1 +1,2 @@
- obj = new B(); 
+
+        System.out.println("Class B constru

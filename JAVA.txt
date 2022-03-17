@@ -20,6 +20,8 @@
     While Creating OBJECT of a certain CLASS a default constructor is always CALLED.(below ex)
     Student obj = new Student();
 
+    While making an Obj of Class B that extends A then it will call the constructor of Class A + Class B both.
+
 
  7) If 2 Class Present then you have to use public keyboard before the class having MAIN Method, then name the file with that
                name only(otherwise it will get confuse which class is having the MAIN Method).
@@ -30,7 +32,7 @@
       - Multi Threaded        ---->  Ability to run multiple threads concurrently at the same time .
       - Portable              ---->  to carry the Java bytecode to any platform.   
       - Encapsulation         ---->  Wrapping up of data and information under a single unit
-      - Polymorphism          ---->  Method Overriding  +  Method OverLoading
+      - Polymorphism          ---->  Method Overriding( RunTime Time Polymorphism )  +  Method OverLoading( CompileTime Time Polymorphism )
       - Inheritance           ---->  Child/SubClass  inherits the METHODS of the Parent Class
 
 

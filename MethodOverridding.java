@@ -7,12 +7,20 @@ public class MethodOverridding {
 }
 
 class A {
+    public A() {
+        System.out.println("constructor of Class A");
+    }
+
     public void Laptop(String hdd, int ssd) {
         System.out.println("Laptop Congfig in ClassA =>   HDD : " + hdd + " ,  SSD : " + ssd);
     }
 }
 
 class B extends A {
+    B() {
+        System.out.println("constructor of Class B");
+    }
+
     public void Laptop(String hdd, int ssd) {
         System.out.println("Laptop Congfig in ClassB =>   HDD : " + hdd + " ,  SSD : " + ssd);
     }
