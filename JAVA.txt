@@ -28,8 +28,7 @@
  8)   FEATURES   ::
       - Platform-Independent  ---->  is that the Java Compiled Code(byte code) can run on all operating systems .    
       - Multi Threaded        ---->  Ability to run multiple threads concurrently at the same time .
-      - Portable              ---->  to carry the Java bytecode to any platform .   
-      
+      - Portable              ---->  to carry the Java bytecode to any platform.   
       - Encapsulation         ---->  Wrapping up of data and information under a single unit
       - Polymorphism          ---->  Method Overriding  +  Method OverLoading
       - Inheritance           ---->  Child/SubClass  inherits the METHODS of the Parent Class
@@ -46,9 +45,8 @@
      Interface    --->   IS A Relationship
 
 
-  11) STEPS ::    * javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file
+  11) STEPS ::    javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file
                     with the same name as that of the Main Class that contains the MAIN FUNCTION in Java. 
-
 
   
           Compile  :  javac  <file_name>

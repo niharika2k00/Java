@@ -29,7 +29,6 @@ class ConstructorOverloading {
     }
 }
 
-
 class House {
     House() {
         System.out.println("\nI'm the DEFAULT CONSTRUCTOR of Class House.\n");

@@ -6,13 +6,11 @@ public class MethodOverridding {
     }
 }
 
-
 class A {
     public void Laptop(String hdd, int ssd) {
         System.out.println("Laptop Congfig in ClassA =>   HDD : " + hdd + " ,  SSD : " + ssd);
     }
 }
-
 
 class B extends A {
     public void Laptop(String hdd, int ssd) {

@@ -1,1 +1,1 @@
-joinString
+ obj = new B(); 

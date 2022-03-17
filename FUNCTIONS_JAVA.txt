@@ -108,6 +108,22 @@
         }
 
 
+        ###  Assigning array into HashMap
+        ------------------------------------------
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (i = 0; i < len; i++)
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);   // put(K key, V value)
+
+        ### Iterate through the map
+        ---------------------------------
+        for (int it : map.keySet()) {
+            if (k > 0 && map.containsKey(it + k) || k == 0 && map.get(it) > 1)
+
+
+        for (Object value : map.values()) {
+            // ...
+        }
+
 
  6) LINKED - LIST    ========>        Node new_node = new Node(new_data);
 
