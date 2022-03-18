@@ -57,8 +57,8 @@
 
   12) The access level modifiers in Java are:
 
-           public - visible to all code
-           protected - visible to all code in the same package and to subclasses regardless of package
-           nothing (default) - visible to all code in the same package
+           public - accessible everywhere
+           protected - accessible in the same package and to subclasses regardless of package
+           nothing (default) - accessible in the same package
            private - visible only to code in the same class (including nested classes)
                       

@@ -1,8 +1,10 @@
 
 //  Abstract Class can contains everything abstruct method(MUST) , non-abstruct method ,  constructor , etc. 
 /*
-       Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
-       Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from). 
+                         To access the abstract class, it must be inherited from another class.
+
+       Abstract Class: is a RESTRICTED class that cannot be used to create objects (to access it, it must be INHERITED from another class).
+       Abstract Method: can only be used in an abstract class, and it DOES NOT have a body. The body is provided by the subclass (inherited from). 
  */
 abstract class Bike {
     Bike() {
@@ -28,7 +30,7 @@ public class Abstraction {
     public static void main(String args[]) {
         Bike obj = new Honda(); // ParentClass obj = new ChildClass
 
-        //  accessing the methods of the child class , if not present then access its Parent Class
+        //  accessing the methods of the child class, if not present then access its Parent Class
         obj.run();
         obj.changeGear();
     }
