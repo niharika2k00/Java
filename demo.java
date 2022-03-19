@@ -23,7 +23,7 @@ public class demo {
         System.out.println(s1 == s2); // false  --  address comparison
         System.out.println(s1.equals(s2)); // true  -- content comparison
 
-        Map<integer, String> student = new HashMap<Integer, String>();
+        Map<Integer, String> student = new HashMap<Integer, String>();
 
         student.put(101, "Rahit");
         student.put(102, "Sudhir");

@@ -91,7 +91,7 @@
 
                                             .size()
                                             .put(K key, V value)
-                                            .contains(Object value)                                   
+                                            .containsValue(Object value)                                   
                                             .containsKey(Object key)
                                             .elements()
                                             .get(Object key)
@@ -101,8 +101,8 @@
 
 
          for (i = 0; i < len; i++) {
-            if (hashMap.containsValue(nums[i]))
-                hashMap.put(i, nums[i]); //  GET the previous Count +  1
+            if (hashMap.containsValue(nums[i])) 
+                hashMap.put(i, nums[i]);             //  GET the previous Count +  1
             else
                 hashMap.put(nums[i], 1);
         }
@@ -117,7 +117,7 @@
         ### Iterate through the map
         ---------------------------------
         for (int it : map.keySet()) {
-            if (k > 0 && map.containsKey(it + k) || k == 0 && map.get(it) > 1)
+            if (k > 0 && map.   (it + k) || k == 0 && map.get(it) > 1)
 
 
         for (Object value : map.values()) {

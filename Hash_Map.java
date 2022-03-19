@@ -27,6 +27,13 @@ public class Hash_Map {
             System.out.println("\nValue for key" + " \"JUnit\"  =>  " + val);
         }
 
+        //   Iterating Hash Map in various ways
+        for (String name : map.keySet()) //  ✅
+            System.out.println("key: " + name);
+
+        for (int view : map.values()) //  ✅
+            System.out.println("value: " + view);
+
         for (Map.Entry<String, Integer> e : map.entrySet())
             System.out.println("Key: " + e.getKey() + "\t Value: " + e.getValue());
 
