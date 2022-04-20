@@ -30,5 +30,29 @@ public class demo {
         student.put(103, "Adithya");
         student.put(104, "Sakshi");
         System.out.println(student.remove(102));
+
+        String X = new String("HELLO");
+        String Y = new String("HELLO");
+
+        String A = "HELLO";
+        String B = "HELLO";
+
+        System.out.println(A == B); // true
+        System.out.println(A.equals(B)); //  true
+        System.out.println(X == Y); // false
+        System.out.println(X.equals(Y)); // true  --> content comparison
+
+        System.out.println(A.equals(X)); // true
+        System.out.println(A == X); // false
+
+        System.out.println("******************************************************");
+        char character = 'a';
+        int num = (int) character;
+        System.out.println(num);
+        System.out.println((char) 65);
+
+        char x = 65;
+        System.out.println(x);
+
     }
 }

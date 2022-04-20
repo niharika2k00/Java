@@ -1,6 +1,6 @@
 
-
-                                  
+                                                                    JAVA 
+                                                                _____________                                  
 
             Collections class is a member of the Java Collections Framework. The java.util.Collections package is the package that contains the Collections class.
  
@@ -42,7 +42,12 @@
         for (int elem: u) {
         // Your individual element
       }
-}
+    }
+
+      //  Initialize 2D array to -1
+        int[][] Dp = new int[m][n];
+        for (int[] arr1 : Dp)
+            Arrays.fill(arr1, -1);
 
 
  1)  SCANNER CLASS    =====> 

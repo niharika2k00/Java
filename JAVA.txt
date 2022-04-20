@@ -14,10 +14,11 @@
       - JVM provides a Default constructor of class ABC always present
       - Constructor has Same Name as the Class Name
       - Doesn't Return Anything
-      - Used to alocate memrory for OBJECT
+      - Called only once at the time of Obj Creation
+      - Used to allocate memrory for OBJECT
       - Creates an instance(Obj) in the Heap Memory
 
-    While Creating OBJECT of a certain CLASS a default constructor is always CALLED.(below ex)
+    While Creating OBJECT of a certain CLASS using new() keyword a default constructor is always CALLED.(below ex)
     Student obj = new Student();
 
     While making an Obj of Class B that extends A then it will call the constructor of Class A + Class B both.
@@ -39,6 +40,8 @@
  9)   Static Method in Java   -->   * Access static method() and fields using Class Name       [ ClassName.methodName(args) ]
                                     * NO NEED  to Create Object/Instance of the Class
                                     * We cannot print Non - Static Variables inside Static Methods
+
+                                    * Not - Static Variable cannot be accessed from Static Methods
 
 
 
@@ -65,3 +68,6 @@
   
   $$ ::  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
      Final Keyword :     https://www.javatpoint.com/final-keyword
+     
+              https://www.javatpoint.com/difference-between-stringbuffer-and-stringbuilder
+
