@@ -3,7 +3,7 @@
 /*
                          To access the abstract class, it must be inherited from another class.
 
-       Abstract Class: is a RESTRICTED class that cannot be used to create objects (to access it, it must be INHERITED from another class).
+       Abstract Class: is a RESTRICTED class object cannot be created (to access it, it must be INHERITED from another class).
        Abstract Method: can only be used in an abstract class, and it DOES NOT have a body. The body is provided by the subclass (inherited from). 
  */
 abstract class Bike {

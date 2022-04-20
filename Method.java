@@ -17,6 +17,8 @@ public class Method {
         objA.color = "Crimson";
         objA.design();
 
+        System.out.println("Accessing PROTECTED VARIABLE = " + objA.buildin);
+
         System.out.println("\n\n---------------------------------------------------------");
         System.out.println("---------------------------------------------------------");
         Student s1 = new Student("John Doe", 85426, "Coder");
@@ -25,10 +27,8 @@ public class Method {
         s2.createStudent();
 
         System.out.println(s1);
-
     }
 }
-
 
 class Bunglow {
 
@@ -37,6 +37,7 @@ class Bunglow {
     int balcony;
     int room;
     String color;
+    protected String buildin = "6 years ago";
 
     // Static Method - always contains static variables
     public static void Country(String name) {
@@ -52,7 +53,6 @@ class Bunglow {
     }
 
 }
-
 
 class Student {
     String name;
