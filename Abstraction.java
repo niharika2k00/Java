@@ -13,6 +13,8 @@ abstract class Bike {
 
     abstract void run();
 
+    abstract String display();
+
     void changeGear() {
         System.out.println("Gear changed");
     }
@@ -28,6 +30,18 @@ class Honda extends Bike {
     void run() {
         System.out.println("Running safely..");
     }
+
+    String display() {
+
+        System.out.println("Inside the display method.");
+
+        super.changeGear();
+        return "\n Finally everything working fine with response 200.\n";
+    }
+
+    // void changeGear() {
+    //     System.out.println("Honda's Gear changed");
+    // }
 }
 
 public class Abstraction {
@@ -38,5 +52,6 @@ public class Abstraction {
         //  accessing the methods of the child class, if not present then access its Parent Class
         obj.run();
         obj.changeGear();
+        System.out.println(obj.display());
     }
 }
