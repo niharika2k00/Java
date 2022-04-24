@@ -2,6 +2,7 @@
 class A {
     public A() {}
 
+    //  PRIVATE method CANNOT be accessible from other class. But PROTECTED , FINAL , PUBLIC can be accessible.
     private void display() {
         System.out.println("In display of A");
     }
@@ -11,7 +12,7 @@ class B extends A {
 
     public B() {}
 
-    public void display() {
+    protected void display() {
         System.out.println("In display of B");
     }
 }
