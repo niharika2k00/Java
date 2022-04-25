@@ -6,7 +6,7 @@ import java.util.*;
        Reference ::  https://www.geeksforgeeks.org/difference-between-and-equals-method-in-java/#:~:text=In%20simple%20words%2C%20%3D%3D%20checks,that%20has%20overridden%20this%20method.
 */
 
-public class demo {
+public class StringEquals {
 
     public static void main(String[] args) {
 
