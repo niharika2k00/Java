@@ -62,9 +62,18 @@ int main()
     printf("%d\n", arr[0]);
 
     char g[] = "geeksforgeeks";
-    // printf("%s\n", g[6]);
+    printf("%d\n", g[6]); // 111
+    printf("%c\n", g[6]); // o
+    printf("%s\n", g[6]); // no output
 
     printf("%s", g + g[6] - g[8]);
 
     return 0;
 }
+
+/* Hello,
+I'm Niharika Dutta CSE 3rd Year student. I have worked as a FullStack Web Developer Intern at Meliorist Developers Pvt. Ltd. for 10 months. Previously worked as a FullStack Developer at The Prodigious People
+and have also done a Frontend Intern at Tawi Tech Solutions. I have worked on ReactJs,NodeJs,MongoDB,AWS tools(Lambda), Material UI technologies during my internship period. I have also
+acquire knowledge about DBMS, DSA, OOPS. I have secured a global rank of 171 among 15000+ participants in Codechef February Long Challenge. I am also active at Codechef(3 star) and Leetcode,solved 200+ problems on DSA.
+I think my respective skills align with the job description. It'll be a great help if you can provide referral for the same.
+For more details about my projects and internship please check out my resume attached below. */
