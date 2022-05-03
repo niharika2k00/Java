@@ -43,7 +43,7 @@ class B extends A {
     }
 
     public B(int num) {
-        super(num);
+        super(num); //  calls the Super Class constructor
         super.method1();
         System.out.println("Parameterized Constructor of Class B " + num);
     }
@@ -55,6 +55,6 @@ class B extends A {
 }
 
 /*
- * -- when we are create & call the OBJ of SubClass  ==>  then it calls the (SuperClass  +  SubClass) Default Const.
+ *  -- when we are create & call the OBJ of SubClass  ==>  then it calls the (SuperClass  +  SubClass) Default Const.
  *  -- use Super(parameter); to call the parameterized constructor for Super Class
  */

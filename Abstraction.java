@@ -11,7 +11,7 @@ abstract class Bike {
         System.out.println("==  Bike Created  ==");
     }
 
-    abstract void run();
+    abstract void run(); // only method signature 
 
     abstract String display();
 
