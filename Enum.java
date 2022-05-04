@@ -19,13 +19,17 @@ public class Enum {
         case MONDAY:
             System.out.println("Mondays are bad. \n");
             break;
+
         case FRIDAY:
             System.out.println("Fridays are better. \n");
             break;
+
         case SATURDAY:
+
         case SUNDAY:
             System.out.println("Weekends are best. \n");
             break;
+
         default:
             System.out.println("Midweek days are so-so. \n");
             break;
