@@ -11,11 +11,11 @@
  4) class ABC    <----  present, its a Default Class(means having "default" access modifier)
 
  5) Constructor
+      - Special Methods Used to allocate/initialise memrory for OBJECT
       - JVM provides a Default constructor of class ABC always present
       - Constructor has Same Name as the Class Name
       - Doesn't Return Anything
-      - Called only once at the time of Obj Creation
-      - Used to allocate memrory for OBJECT
+      - Called only ONCE at the time of Obj Creation
       - Creates an instance(Obj) in the Heap Memory
 
     While Creating OBJECT of a certain CLASS using new() keyword a default constructor is always CALLED.(below ex)
@@ -58,12 +58,18 @@
                       java <class_name>   
 
 
-  12) The access level modifiers in Java are:
+  12) The access level MODIFIERS in Java are:
 
-           public - accessible everywhere
+           public - accessible everywhere in the application
            protected - accessible in the same package and to subclasses regardless of package
            nothing (default) - accessible in the same package
            private - visible only to code in the same class (including nested classes)
+
+
+  13)  Main Method :  Can be OVERRIDDEN ,  OVERLOADED , RECURSE
+                        https://www.geeksforgeeks.org/gfact-48-overloading-main-in-java/   
+
+
                       
   
   $$ ::  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
