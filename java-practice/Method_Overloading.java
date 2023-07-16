@@ -1,5 +1,5 @@
 
-public class MethodOverloading {
+public class Method_Overloading {
     public static void main(String[] args) {
 
         A objA = new A();
@@ -17,7 +17,7 @@ class A {
         System.out.println("Laptop Congfig =>   HDD : " + hdd + " ,  SSD : " + ssd);
     }
 }
-/* 
-      Method Overloading  OR  Compile Time Polymorphism 
+/*
+      Method Overloading  OR  Compile Time Polymorphism
                    --  Function/Method with SAME NAME but different parameters and data types
 */

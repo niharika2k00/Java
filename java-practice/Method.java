@@ -19,15 +19,17 @@ public class Method {
 
         System.out.println("Accessing PROTECTED VARIABLE = " + objA.buildin);
 
-        System.out.println("\n\n---------------------------------------------------------");
+        System.out.println("\n---------------------------------------------------------");
         System.out.println("---------------------------------------------------------");
         Student s1 = new Student("John Doe", 85426, "Coder");
         Student s2 = new Student("Genelia", 12537, "Dancer");
+
         s1.createStudent();
         s2.createStudent();
 
         System.out.println(s1);
     }
+
 }
 
 class Bunglow {

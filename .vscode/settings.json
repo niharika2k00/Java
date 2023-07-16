@@ -4,5 +4,8 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.detectIndentation": true
-  }
+  },
+  "files.insertFinalNewline": false,
+  "files.trimFinalNewlines": true,
+  "java.debug.settings.onBuildFailureProceed": true
 }

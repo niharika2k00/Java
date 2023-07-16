@@ -1,6 +1,5 @@
-
 class Encap {
-    // private variables declared these can only be accessed by PUBLIC METHODS  of class.
+    // private var can only be accessed by METHODS of the same class.
     private String geekName;
     private int geekRoll;
     private int geekAge;

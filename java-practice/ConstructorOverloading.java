@@ -1,10 +1,10 @@
 
-/* 
-          CONSTRUCTOR OVERLOADING 
+/*
+          CONSTRUCTOR OVERLOADING
        _____________________________
 
-    - Same Name as Class Name    
-    -  Different Parameters  
+    - Same Name as Class Name
+    -  Different Parameters
 */
 
 class ConstructorOverloading {
@@ -24,12 +24,13 @@ class ConstructorOverloading {
         System.out.println(Object1);
 
         House ObjAppend = new House(); // Calls the default constructor
-        String ans = ObjAppend.Join("Java ", " is an OOP Languages. ");
+        String ans = ObjAppend.Join("Java ", "is an OOP Languages. ");
         System.out.println(ans);
     }
 }
 
 class House {
+    // Non-Parameterized constructor
     House() {
         System.out.println("\nI'm the DEFAULT CONSTRUCTOR of Class House.\n");
     }
@@ -43,7 +44,13 @@ class House {
         System.out.println(x + " " + color + " Curtains");
     }
 
+    public House(int i, String string, int j) {}
+
+    public House(int i, String string, String string2) {}
+
     public String Join(String a, String b) {
         return a.concat(b);
     }
+
+    public void getLocation() {}
 }

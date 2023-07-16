@@ -2,16 +2,16 @@
                                                    ----------------------         JAVA            ---------------------
 
  1)  Class Name should be same as File name
- 2)  If we use 
+ 2)  If we use
                  class ABC (that contains psvm) then file name can be either           ABC.java      or      anything.java
- 
- 3)  If we use 
-                 public class ABC  (that contains psvm) then file name                  MUST BE   ABC.java                                                   
-  
+
+ 3)  If we use
+                 public class ABC  (that contains psvm) then file name                  MUST BE   ABC.java
+
  4) class ABC    <----  present, its a Default Class(means having "default" access modifier)
 
  5) Constructor
-      - Special Methods Used to allocate/initialise memrory for OBJECT
+      - Special Methods Used to allocate/initialise memory for OBJECT
       - JVM provides a Default constructor of class ABC always present
       - Constructor has Same Name as the Class Name
       - Doesn't Return Anything
@@ -22,16 +22,17 @@
     Student obj = new Student();
 
     While making an Obj of Class B that extends A then it will call the constructor of Class A + Class B both.
-
+    Calling Child Class - Constructor of Parent and Constructor of Child executes.
+          runs sequence: ConstChild + ConstParent
 
  7) If 2 Class Present then you have to use public keyboard before the class having MAIN Method, then name the file with that
                name only(otherwise it will get confuse which class is having the MAIN Method).
 
 
  8)   FEATURES   ::
-      - Platform-Independent  ---->  is that the Java Compiled Code(byte code) can run on all operating systems .    
+      - Platform-Independent  ---->  is that the Java Compiled Code(byte code) can run on all operating systems .
       - Multi Threaded        ---->  Ability to run multiple threads concurrently at the same time .
-      - Portable              ---->  to carry the Java bytecode to any platform.   
+      - Portable              ---->  to carry the Java bytecode to any platform.
       - Encapsulation         ---->  Wrapping up of data and information under a single unit
       - Polymorphism          ---->  Method Overriding( RunTime Time Polymorphism )  +  Method OverLoading( CompileTime Time Polymorphism )
       - Inheritance           ---->  Child/SubClass  inherits the METHODS of the Parent Class
@@ -39,8 +40,7 @@
 
  9)   Static Method in Java   -->   * Access static method() and fields using Class Name       [ ClassName.methodName(args) ]
                                     * NO NEED  to Create Object/Instance of the Class
-                                    * We cannot print Non - Static Variables inside Static Methods
-                                    * Not - Static Variable cannot be accessed from Static Methods
+                                    * We cannot access/print Non-Static Variables inside Static Methods
 
          https://www.geeksforgeeks.org/static-keyword-java/?ref=lbp
 
@@ -54,11 +54,11 @@
 
 
   11) STEPS ::    javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file
-                    with the same name as that of the Main Class that contains the MAIN FUNCTION in Java. 
+                    with the same name as that of the Main Class that contains the MAIN FUNCTION in Java.
 
-  
+
           Compile  :  javac  <file_name>
-                      java <class_name>   
+                      java <class_name>
 
 
   12) The access level MODIFIERS in Java are:
@@ -70,16 +70,20 @@
 
 
   13)  Main Method :  Can be OVERRIDDEN ,  OVERLOADED , RECURSE
-                        https://www.geeksforgeeks.org/gfact-48-overloading-main-in-java/   
-
-
-                      
+                        https://www.geeksforgeeks.org/gfact-48-overloading-main-in-java/
 
 
 
-  
+   14)  super() -> keywords used to call the constructor of the Parent Class
+        this() -> keywords used to call the constructor of itself
+
+
+
   $$ ::  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
      Final Keyword :     https://www.javatpoint.com/final-keyword
-     
+
               https://www.javatpoint.com/difference-between-stringbuffer-and-stringbuilder
 
+
+      Method Overriding  OR  RunTime Time Polymorphism
+                   --  Subclass (child class) has the same method as declared in the parent class

@@ -20,7 +20,7 @@ class Child extends Parent {
     }
 }
 
-public class Inheritance_GrandParent {
+public class Inheritance_Chaining {
     public static void main(String[] args) {
         Child c = new Child();
         c.Print();
