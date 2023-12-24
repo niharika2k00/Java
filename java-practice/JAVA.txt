@@ -10,6 +10,19 @@
 
  4) class ABC    <----  present, its a Default Class(means having "default" access modifier)
 
+
+Modifier      Package  Subclass  World
+
+public          Yes      Yes     Yes
+
+protected       Yes      Yes     No
+
+Default (no
+modifier)       Yes       No     No
+
+private         No        No     No
+
+
  5) Constructor
       - Special Methods Used to allocate/initialise memory for OBJECT
       - JVM provides a Default constructor of class ABC always present
@@ -87,3 +100,33 @@
 
       Method Overriding  OR  RunTime Time Polymorphism
                    --  Subclass (child class) has the same method as declared in the parent class
+
+
+     15)
+     Vector calss is thread safe (single thread) - LOW performance than ArrayList
+
+         🚨🚨 Volatile Variable: https://www.javatpoint.com/volatile-keyword-in-java
+
+
+     16) In Java, String values are stored in a special memory area known as the String Pool, which is part of the Heap memory.
+               String str = "Hello!"
+
+          When string is created with new keyword, then new memory is allocate in the Heap
+               String str = new String("Hello!");
+
+          And in order to save the string in the string pool use .intern() func
+
+          https://www.javatpoint.com/java-string-intern
+          https://www.geeksforgeeks.org/storage-of-string-in-java/
+          https://www.javatpoint.com/string-pool-in-java#:~:text=All%20Strings%20are%20stored%20in,stored%20in%20the%20String%20pool.
+
+
+          https://www.javatpoint.com/difference-between-stringbuffer-and-stringbuilder
+
+
+
+
+
+
+
+ https://www.geeksforgeeks.org/java-and-multiple-inheritance/

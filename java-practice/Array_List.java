@@ -19,7 +19,7 @@ public class Array_List {
         // ---------------------------------------------------------------------
         //                        ArrayList
         // ---------------------------------------------------------------------
-        ArrayList<Integer> arrList_A = new ArrayList<Integer>(n);
+        ArrayList<Integer> arrList_A = new ArrayList<Integer>(n); // similar to vector, ie its a dynamic array.
 
         for (i = 0; i < n; i++) // Append
             arrList_A.add(i);
@@ -36,7 +36,7 @@ public class Array_List {
         ArrayList<Integer> vec = new ArrayList<Integer>(4);
         System.out.println("\n\nEnter elements for ArrayList : ");
         for (int j = 0; j <= 3; j++) {
-            // int ele = sc.nextInt(); 
+            // int ele = sc.nextInt();
             int ele = Integer.parseInt(br.readLine());
             vec.add(ele);
         }
@@ -56,7 +56,6 @@ public class Array_List {
             System.out.print(str + " ");
     }
 }
-
 
 class Manupulation {
 

@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.HashMap;
 import java.util.*;
-/* 
+/*
        Reference ::  https://www.geeksforgeeks.org/difference-between-and-equals-method-in-java/#:~:text=In%20simple%20words%2C%20%3D%3D%20checks,that%20has%20overridden%20this%20method.
 */
 
@@ -21,7 +21,7 @@ public class StringEquals {
         String s2 = new String("prepinsta");
 
         System.out.println(s1 == s2); // false  --  address comparison
-        System.out.println(s1.equals(s2)); // true  -- content comparison
+        System.out.println(s1.equals(s2)); // true  -- value comparison not the reference
 
         Map<Integer, String> student = new HashMap<Integer, String>();
 

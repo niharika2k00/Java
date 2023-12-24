@@ -7,5 +7,21 @@
   },
   "files.insertFinalNewline": false,
   "files.trimFinalNewlines": true,
-  "java.debug.settings.onBuildFailureProceed": true
+  "java.debug.settings.onBuildFailureProceed": true,
+  "files.associations": {
+    "*.spc": "terraform",
+    "*.sp": "hcl",
+    ".sql": "sql",
+    "*.tf": "terraform",
+    "ios": "cpp",
+    "random": "cpp",
+    "string": "cpp",
+    "vector": "cpp"
+  },
+  "java.format.onType.enabled": true,
+  "java.completion.chain.enabled": true,
+  "java.codeGeneration.toString.skipNullValues": true,
+  "java.edit.smartSemicolonDetection.enabled": true,
+  "java.implementationsCodeLens.enabled": true,
+  "javascript.format.insertSpaceAfterConstructor": true
 }
