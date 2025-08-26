@@ -66,7 +66,7 @@ private         No        No     No
      Interface    --->   IS A Relationship
 
 
-  11) STEPS ::    javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file
+ 11) STEPS ::    javac  <file_name>  ->  <file_name> will be original file name, but after conpiling successfully it will create a .class file
                     with the same name as that of the Main Class that contains the MAIN FUNCTION in Java.
 
 
@@ -74,7 +74,7 @@ private         No        No     No
                       java <class_name>
 
 
-  12) The access level MODIFIERS in Java are:
+ 12) The access level MODIFIERS in Java are:
 
            public - accessible everywhere in the application
            protected - accessible in the same package and to subclasses regardless of package
@@ -82,14 +82,12 @@ private         No        No     No
            private - visible only to code in the same class (including nested classes)
 
 
-  13)  Main Method :  Can be OVERRIDDEN ,  OVERLOADED , RECURSE
+ 13)  Main Method :  Can be OVERRIDDEN ,  OVERLOADED , RECURSE
                         https://www.geeksforgeeks.org/gfact-48-overloading-main-in-java/
 
 
-
-   14)  super() -> keywords used to call the constructor of the Parent Class
-        this() -> keywords used to call the constructor of itself
-
+ 14)  super() -> keywords used to call the constructor of the Parent Class
+      this() -> keywords used to call the constructor of itself
 
 
   $$ ::  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -102,13 +100,13 @@ private         No        No     No
                    --  Subclass (child class) has the same method as declared in the parent class
 
 
-     15)
-     Vector calss is thread safe (single thread) - LOW performance than ArrayList
+ 15)
+     Vector class is thread safe (single thread) - LOW performance than ArrayList
 
          🚨🚨 Volatile Variable: https://www.javatpoint.com/volatile-keyword-in-java
 
 
-     16) In Java, String values are stored in a special memory area known as the String Pool, which is part of the Heap memory.
+ 16) In Java, String values are stored in a special memory area known as the String Pool, which is part of the Heap memory.
                String str = "Hello!"
 
           When string is created with new keyword, then new memory is allocate in the Heap
@@ -124,9 +122,13 @@ private         No        No     No
           https://www.javatpoint.com/difference-between-stringbuffer-and-stringbuilder
 
 
+ 17) Lambda Expression: https://www.geeksforgeeks.org/lambda-expressions-java-8/
+
+
 
 
 
 
 
  https://www.geeksforgeeks.org/java-and-multiple-inheritance/
+ https://www.geeksforgeeks.org/type-conversion-java-examples/
