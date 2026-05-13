@@ -1,17 +1,17 @@
 
-//  Abstract Class can contains everything abstruct method(MUST) , non-abstruct method ,  constructor , etc. 
+//  Abstract Class can contains everything abstruct method(MUST) , non-abstruct method ,  constructor , etc.
 /*
                          To access the abstract class, it must be inherited from another class.
 
        Abstract Class: is a RESTRICTED class object(Instances) cannot be created to access it, it must be INHERITED from another Class.
-       Abstract Method: can only be used in an abstract class, and it DOES NOT have a body. The body is provided by the subclass (inherited class). 
+       Abstract Method: can only be used in an abstract class, and it DOES NOT have a body. The body is provided by the subclass (inherited class).
  */
 abstract class Bike {
     Bike() {
         System.out.println("==  Bike Created  ==");
     }
 
-    abstract void run(); // only method signature 
+    abstract void run(); // only method signature
 
     abstract String display();
 
@@ -20,7 +20,7 @@ abstract class Bike {
     }
 }
 
-//Creating a Child class which inherits Abstract class  
+//Creating a Child class which inherits Abstract class
 class Honda extends Bike {
 
     Honda() {
@@ -32,16 +32,14 @@ class Honda extends Bike {
     }
 
     String display() {
-
         System.out.println("Inside the display method.");
-
         super.changeGear();
         return "\n Finally everything working fine with response 200.\n";
     }
 
-    // void changeGear() {
-    //     System.out.println("Honda's Gear changed");
-    // }
+    void age() {
+        System.out.println("Honda's age is 10 years");
+    }
 }
 
 public class Abstraction {
@@ -49,9 +47,14 @@ public class Abstraction {
     public static void main(String args[]) {
         Bike obj = new Honda(); // ParentClass obj = new ChildClass
 
-        //  accessing the methods of the child class, if not present then access its Parent Class
+        // accessing the methods of the child class, if not present then access its Parent Class
         obj.run();
         obj.changeGear();
+        // obj.age();
         System.out.println(obj.display());
     }
 }
+
+// NOTE:
+// 1) obj can only access methods defined in Bike(parent class)
+// 2) but the actual object is Honda, so overridden methods run from Honda

@@ -61,7 +61,7 @@ class Manupulation {
 
     // Printing all elements
     public void printElement(ArrayList<Integer> arrList) {
-        int i, len = arrList.size();;
+        int i, len = arrList.size();
         System.out.println("\nElements in the array : ");
 
         for (i = 0; i < len; i++)

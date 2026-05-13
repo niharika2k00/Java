@@ -1,7 +1,6 @@
 
 class A {
-    //     Private :  Can't possible to access from the Main fn., as its scope is RESTRICTED within the Class                     
-
+    // Private :  Can't possible to access from the Main fn., as its scope is RESTRICTED within the Class
     protected void log() {
         System.out.println("Log of Class-A");
     }

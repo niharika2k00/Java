@@ -4,7 +4,7 @@
        _____________________________
 
     - Same Name as Class Name
-    -  Different Parameters
+    - Different Parameters
 */
 
 class ConstructorOverloading {

@@ -1,7 +1,7 @@
 
 // https://www.geeksforgeeks.org/constructor-chaining-java-examples/?ref=lbp
 
-//          Constructor Chaining 
+//          Constructor Chaining
 
 public class Constructor_Chaining {
 
@@ -29,5 +29,5 @@ public class Constructor_Chaining {
     }
 }
 
-//  super() -> keywords used to call the constructor of the Parent Class
-//  this() -> keywords used to call the constructor of itSelf
+// super() -> keywords used to call the constructor of the Parent Class
+// this() -> keywords used to call the constructor of itSelf
