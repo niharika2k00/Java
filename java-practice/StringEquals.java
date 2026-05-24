@@ -6,68 +6,66 @@ import java.util.*;
 */
 
 public class StringEquals {
+  public static void main(String[] args) {
+    String s3 = "This is prepinsta Material";
+    String s4 = "This is prepinsta Material";
+    String s5 = "This is ";
+    String s6 = s5 + "prepinsta Material";
 
-    public static void main(String[] args) {
+    System.out.println(s3 == s6);
+    System.out.println(s3 == s4);
 
-        String s3 = "This is prepinsta Material";
-        String s4 = "This is prepinsta Material";
-        String s5 = "This is ";
-        String s6 = s5 + "prepinsta Material";
+    String s1 = "prepinsta";
+    String s2 = new String("prepinsta");
 
-        System.out.println(s3 == s6);
-        System.out.println(s3 == s4);
+    System.out.println(s1 == s2); // false -- address comparison
+    System.out.println(s1.equals(s2)); // true -- value comparison not the reference
 
-        String s1 = "prepinsta";
-        String s2 = new String("prepinsta");
+    Map<Integer, String> student = new HashMap<Integer, String>();
 
-        System.out.println(s1 == s2); // false -- address comparison
-        System.out.println(s1.equals(s2)); // true -- value comparison not the reference
+    student.put(101, "Rahit");
+    student.put(102, "Sudhir");
+    student.put(103, "Adithya");
+    student.put(104, "Sakshi");
+    System.out.println(student.remove(102));
 
-        Map<Integer, String> student = new HashMap<Integer, String>();
+    String X = new String("HELLO");
+    String Y = new String("HELLO");
 
-        student.put(101, "Rahit");
-        student.put(102, "Sudhir");
-        student.put(103, "Adithya");
-        student.put(104, "Sakshi");
-        System.out.println(student.remove(102));
+    String A = "HELLO";
+    String B = "HELLO";
 
-        String X = new String("HELLO");
-        String Y = new String("HELLO");
+    System.out.println(A == B); // true
+    System.out.println(A.equals(B)); // true
+    System.out.println(X == Y); // false
+    System.out.println(X.equals(Y)); // true --> content comparison
 
-        String A = "HELLO";
-        String B = "HELLO";
+    System.out.println(A.equals(X)); // true
+    System.out.println(A == X); // false
 
-        System.out.println(A == B); // true
-        System.out.println(A.equals(B)); // true
-        System.out.println(X == Y); // false
-        System.out.println(X.equals(Y)); // true --> content comparison
+    System.out.println("******************************************************");
+    char character = 'a';
+    int num = (int) character;
+    System.out.println(num);
+    System.out.println((char) 65);
 
-        System.out.println(A.equals(X)); // true
-        System.out.println(A == X); // false
+    char x = 65;
+    System.out.println(x);
 
-        System.out.println("******************************************************");
-        char character = 'a';
-        int num = (int) character;
-        System.out.println(num);
-        System.out.println((char) 65);
+    StringBuffer p = new StringBuffer("This is prepinsta Material");
+    System.out.println(s3.equals(p.toString())); // convert to String then compare
+    System.out.println(s3.contentEquals(p));
 
-        char x = 65;
-        System.out.println(x);
+    // Java caches Integer objects for values -128 to 127:
+    System.out.println("For Integers:");
+    Integer k = 127;
+    Integer y = 127;
+    System.out.println(k == y); // true — cached, same object
 
-        StringBuffer p = new StringBuffer("This is prepinsta Material");
-        System.out.println(s3.equals(p.toString())); // convert to String then compare
-        System.out.println(s3.contentEquals(p));
+    Integer a = 128;
+    Integer b = 128;
+    System.out.println(a == b); // false — outside cache, new objects
+    System.out.println(a.equals(b)); // true — always use equals()
 
-        // Java caches Integer objects for values -128 to 127:
-        System.out.println("For Integers:");
-        Integer k = 127;
-        Integer y = 127;
-        System.out.println(k == y); // true — cached, same object
-
-        Integer a = 128;
-        Integer b = 128;
-        System.out.println(a == b); // false — outside cache, new objects
-        System.out.println(a.equals(b)); // true — always use equals()
-
-    }
+  }
 }

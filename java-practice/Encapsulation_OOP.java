@@ -1,46 +1,46 @@
 class Encap {
-    // private var can only be accessed by METHODS of the same class.
-    private String geekName;
-    private int geekRoll;
-    private int geekAge;
+  // private var can only be accessed by METHODS of the same class.
+  private String geekName;
+  private int geekRoll;
+  private int geekAge;
 
-    public int getAge() {
-        return geekAge;
-    }
+  public int getAge() {
+    return geekAge;
+  }
 
-    public String getName() {
-        return geekName;
-    }
+  public String getName() {
+    return geekName;
+  }
 
-    public int getRoll() {
-        return geekRoll;
-    }
+  public int getRoll() {
+    return geekRoll;
+  }
 
-    public void setAge(int newAge) {
-        geekAge = newAge;
-    }
+  public void setAge(int newAge) {
+    geekAge = newAge;
+  }
 
-    public void setName(String newName) {
-        geekName = newName;
-    }
+  public void setName(String newName) {
+    geekName = newName;
+  }
 
-    public void setRoll(int newRoll) {
-        geekRoll = newRoll;
-    }
+  public void setRoll(int newRoll) {
+    geekRoll = newRoll;
+  }
 }
 
 public class Encapsulation_OOP {
-    public static void main(String[] args) {
-        Encap obj = new Encap();
+  public static void main(String[] args) {
+    Encap obj = new Encap();
 
-        // setting values of the variables
-        obj.setName("Ms. Mathew");
-        obj.setAge(69);
-        obj.setRoll(12378562);
+    // setting values of the variables
+    obj.setName("Ms. Mathew");
+    obj.setAge(69);
+    obj.setRoll(12378562);
 
-        // Displaying values of the variables
-        System.out.println("Employee's name: " + obj.getName());
-        System.out.println("Employee's age: " + obj.getAge());
-        System.out.println("Employee's ID: " + obj.getRoll());
-    }
+    // Displaying values of the variables
+    System.out.println("Employee's name: " + obj.getName());
+    System.out.println("Employee's age: " + obj.getAge());
+    System.out.println("Employee's ID: " + obj.getRoll());
+  }
 }

@@ -7,8 +7,10 @@ public class ComparableDemo {
   public static void main(String[] args) {
 
     // Collections.sort method is sorting the elements of ArrayList in ascending order automatically as String class implements Comparable interface so can directly use compareTo() method
-    ArrayList<String> harrypotter = new ArrayList<String>(Arrays.asList("Hufflepuff", "Gryffindor", "Slytherin", "Ravenclaw"));
+    ArrayList<String> harrypotter = new ArrayList<String>(
+        Arrays.asList("Hufflepuff", "Gryffindor", "Slytherin", "Ravenclaw"));
     Collections.sort(harrypotter);
+    Collections.sort(harrypotter, Collections.reverseOrder()); // sort in reverse
     System.out.println("Houses after sorting:\n" + harrypotter + "\n");
 
     List<Employee> employees = Arrays.asList(

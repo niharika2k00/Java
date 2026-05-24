@@ -52,10 +52,12 @@ public class StreamDemo {
     // --------------------------
     // operations on stream
     // --------------------------
-    List<String> result = stream4.sorted().distinct().peek(System.out::println).map(String::toUpperCase).collect(Collectors.toList()); // .collect(Collectors.joining(", "))
+    List<String> result = stream4.sorted().distinct().peek(System.out::println).map(String::toUpperCase)
+        .collect(Collectors.toList()); // .collect(Collectors.joining(", "))
     System.out.println(result);
 
-    numberList.stream().distinct().filter(x -> x % 2 == 0).sorted().map(x -> x * 2).collect(Collectors.toList()).forEach(System.out::println); // 🚨📌 important
+    numberList.stream().distinct().filter(x -> x % 2 == 0).sorted().map(x -> x * 2).collect(Collectors.toList())
+        .forEach(System.out::println); // 🚨📌 important
     long count = numberList.stream().count();
     System.out.println("total number of elements: " + count);
 
