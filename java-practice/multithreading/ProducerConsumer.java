@@ -44,7 +44,8 @@ public class ProducerConsumer {
           buffer.producer(i);
           Thread.sleep(100);
         }
-      } catch (InterruptedException e) {
+      }
+      catch (InterruptedException e) {
       }
     });
 
@@ -55,7 +56,8 @@ public class ProducerConsumer {
           buffer.consumer();
           Thread.sleep(300);
         }
-      } catch (InterruptedException e) {
+      }
+      catch (InterruptedException e) {
       }
     });
 

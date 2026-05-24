@@ -6,11 +6,13 @@ class BankAccount {
     if (balance >= amount) {
       try {
         Thread.sleep(10);
-      } catch (Exception e) {
+      }
+      catch (Exception e) {
       } // simulate delay
       balance -= amount;
       System.out.println(Thread.currentThread().getName() + " withdrew " + amount + " | balance: " + balance);
-    } else {
+    }
+    else {
       System.out.println(Thread.currentThread().getName() + " - insufficient balance: " + balance);
     }
   }
@@ -20,14 +22,14 @@ class BankAccount {
     if (balance >= amount) {
       try {
         Thread.sleep(10);
-      } catch (Exception e) {
+      }
+      catch (Exception e) {
       } // simulate delay
       balance -= amount;
-      System.out.println(Thread.currentThread().getName()
-          + " withdrew " + amount + " | balance: " + balance);
-    } else {
-      System.out.println(Thread.currentThread().getName()
-          + " - insufficient balance: " + balance);
+      System.out.println(Thread.currentThread().getName() + " withdrew " + amount + " | balance: " + balance);
+    }
+    else {
+      System.out.println(Thread.currentThread().getName() + " - insufficient balance: " + balance);
     }
   }
 

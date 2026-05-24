@@ -2,7 +2,6 @@
 // Multithreading
 public class Threading {
   public static void main(String[] args) {
-
     Thread t1 = new Thread(new FoodFactory("Bread"));
     Thread t2 = new Thread(new FoodFactory("Pizza"));
     Thread t3 = new Thread(new FoodFactory("Pasta"));
@@ -27,7 +26,8 @@ public class Threading {
       t2.join();
       t3.join();
       t4.join();
-    } catch (InterruptedException e) {
+    }
+    catch (InterruptedException e) {
       Thread.currentThread().interrupt();
     }
 
@@ -52,4 +52,3 @@ class FoodFactory implements Runnable {
 // ⚠️⚠️ If .join() is used make sure to handle InterruptedException as it throws it.
 // 1. either via try-catch block OR
 // 2. via throws InterruptedException from the calling method and pass it up to JVM for handle
-

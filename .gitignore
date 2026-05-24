@@ -2,3 +2,5 @@
 # ignore a file type  .class
 *.class
 *node_modules
+*.target
+target/
