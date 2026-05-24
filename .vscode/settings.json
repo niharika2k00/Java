@@ -2,8 +2,8 @@
   "java.format.settings.url": ".vscode/java-formatter.xml",
   "[java]": {
     "editor.insertSpaces": true,
-    "editor.tabSize": 4,
-    "editor.detectIndentation": true
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
   },
   "files.insertFinalNewline": false,
   "files.trimFinalNewlines": true,
