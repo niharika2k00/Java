@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class String_Function {
+public class StringMethods {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -9,7 +9,7 @@ public class String_Function {
         String strB = new String("Happy_Coding!"); // Str formed using Constructor
 
         System.out.println(strA);
-        System.out.println(strA.compareTo(strB)); // Returns the difference between the 2 that differs 
+        System.out.println(strA.compareTo(strB)); // Returns the difference between the 2 that differs
         System.out.println(strA.contains("Wor"));
         System.out.println(strB.endsWith("ing!"));
         System.out.println(strA.equals(strB));

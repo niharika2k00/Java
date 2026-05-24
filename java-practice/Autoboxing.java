@@ -1,9 +1,8 @@
 
 public class Autoboxing {
-
     public static void main(String[] args) {
 
-        //  Auto boxing  -->  Primitive data type converted to Wrapper Class. 
+        //  Auto boxing  -->  Primitive data type converted to Wrapper Class.
         char ch = 'N';
         Character a = ch;
 

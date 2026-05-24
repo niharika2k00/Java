@@ -6,11 +6,11 @@ enum Day {
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
 }
 
-public class Enum {
+public class EnumDemo {
     Day name;
 
     // Constructor
-    public Enum(Day name) {
+    public EnumDemo(Day name) {
         this.name = name;
     }
 
@@ -25,7 +25,6 @@ public class Enum {
             break;
 
         case SATURDAY:
-
         case SUNDAY:
             System.out.println("Weekends are best. \n");
             break;
@@ -37,9 +36,8 @@ public class Enum {
     }
 
     public static void main(String[] args) {
-
-        String str = "MONDAY";
-        Enum obj = new Enum(Day.valueOf(str));
+        String str = "SATURDAY";
+        EnumDemo obj = new EnumDemo(Day.valueOf(str));
         obj.dayIsLike();
 
         // all values

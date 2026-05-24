@@ -1,4 +1,4 @@
-public class Method_Overridding {
+public class MethodOverriddingDemo {
     public static void main(String[] args) {
         classB objfirst = new classB();
         objfirst.LaptopConfig("1 TB", 256);

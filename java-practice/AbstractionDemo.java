@@ -32,12 +32,7 @@ public class AbstractionDemo {
         System.out.println("\n── 2. Shape → Circle ──");
         Shape circle = new Circle("Red", 2.2);
         System.out.println(circle); // calls toString()
-        System.out.println("Color : " + circle.getColor());
-
-        System.out.println("\n── 3. Shape → Rectangle ──");
-        Shape rect = new Rectangle("Yellow", 2, 4);
-        System.out.println(rect);
-        System.out.println("Area  : " + rect.calcArea());
+        System.out.println("Color: " + circle.getColor() + " and Area: " + circle.calcArea());
 
         // ── 3. Polymorphism via abstract reference ────────────────
         System.out.println("\n── 4. Polymorphism — Shape array ──");

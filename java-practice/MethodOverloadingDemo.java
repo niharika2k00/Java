@@ -1,5 +1,5 @@
 
-public class Method_Overloading {
+public class MethodOverloadingDemo {
     public static void main(String[] args) {
 
         A objA = new A();
