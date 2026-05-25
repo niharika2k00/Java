@@ -21,6 +21,13 @@ class Employee {
   }
 }
 
+// a - b < 0 (negative - Ascending) | b - a < 0 (positive - Descending)
+class SortBySalary implements Comparator<Employee> {
+  public int compare(Employee a, Employee b) {
+    return a.salary - b.salary; // ascending
+  }
+}
+
 public class ComparatorDemo {
   public static void main(String[] args) {
     List<Employee> employees = Arrays.asList(
@@ -30,20 +37,34 @@ public class ComparatorDemo {
         new Employee("Bob", "Finanace", 44000));
 
     System.out.println("Original List:");
-    for (Employee item : employees) {
-      System.out.println(item.name + " → " + item.salary);
-    }
+    print(employees);
 
+    // ════════════════════════════════════════════════════════════════
+    // Method 1 — Using custom Comparator class for sorting
+    // ════════════════════════════════════════════════════════════════
+    Collections.sort(employees, new SortBySalary());
+    System.out.println("\nDisplay after sorting using Method 1:");
+    print(employees);
+
+    // ════════════════════════════════════════════════════════════════
+    // Method 2 — Using built-in Comparator methods
+    // ════════════════════════════════════════════════════════════════
     Comparator<Employee> byName = Comparator.comparing(e -> e.name);
     Comparator<Employee> bySalary = Comparator.comparingInt(e -> e.salary);
     Comparator<Employee> byNameThenSalary = Comparator.comparing((Employee e) -> e.name).thenComparingInt(e -> e.salary);
 
-    // method 1: using lambda function
+    // method 1: using collections
+    Collections.sort(employees, bySalary);
+
+    // method 2: using lambda function
     employees.sort(byName); // sort by name
+    employees.sort((a, b) -> a.salary - b.salary); // same as above one
+
     employees.sort(Comparator.comparingInt(e -> e.salary)); // sort by salary
     employees.sort(byNameThenSalary); // Sort employees by name, then by dept
 
-    // method 2: using stream
+
+    // method 3: using stream
     // sort by salary / name ...
     employees.stream().sorted(bySalary).forEach(item -> System.out.println(item.salary));
 
@@ -53,19 +74,23 @@ public class ComparatorDemo {
         Collectors.maxBy(Comparator.comparingInt(e -> e.salary))))
         .forEach((dept, emp) -> System.out.println(dept + " → " + emp.get().name + " → " + emp.get().salary));
 
-    // method 3: using collections
-    Collections.sort(employees, bySalary);
+    System.out.println("\nDisplay after sorting using Method 2:");
+    print(employees);
+  }
 
-    // Display after sorting
-    System.out.println("\n");
-    System.out.println("After Sorting:");
-    employees.forEach(item -> System.out.println(item.name + " → " + item.salary));
+  private static void print(List<Employee> employees) {
+    employees.forEach(item -> {
+      System.out.println(item.name + " → " + item.dept + " → " + item.salary);
+    });
+
+    // for (Employee item : employees) {
+    //   System.out.println(item.name + " → " + item.dept + " → " + item.salary);
+    // }
   }
 }
 
 /*
-📌⚠️ Note:
-  Comparator  →  compare(e1, e2)
+📌⚠️ Note:  Comparator  →  compare(e1, e2)
 
 For case-insensitive sorting, use compareToIgnoreCase() or Comparator.comparing(String::toLowerCase)
 */

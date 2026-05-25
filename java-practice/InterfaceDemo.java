@@ -24,17 +24,29 @@ abstract class Dev2 extends Dev1 {
 }
 
 // Level 3
+// class Dev3 extends Dev2 implements Bank // ✅ internally java treats this class automatically
 class Dev3 extends Dev2 {
   public void loan() {}
-  public void account() {}
+
+  public void account() {
+    System.out.println("This is account");
+  }
+
+  public void extraMethod() {
+    System.out.println("This is a method not present in the interface");
+  }
 }
 
 public class InterfaceDemo {
   public static void main(String[] args) {
-    Dev3 d = new Dev3();
-    d.account();
-    d.loan();
-    d.deposit();
-    d.withdraw();
+    Bank obj1 = new Dev3();
+    obj1.account();
+    // obj1.extraMethod(); // ❌ error - This object can only call methods defined in Bank interface
+
+    Dev3 obj2 = new Dev3();
+    obj2.account();
+    obj2.loan();
+    obj2.deposit();
+    obj2.withdraw();
   }
 }
