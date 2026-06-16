@@ -25,6 +25,8 @@ public class MapDemo {
     map.put("Alice", 95); // duplicate key — OVERWRITES previous value
     System.out.println("After put: " + map);
 
+    Map<String, Integer> map1 = new HashMap<>(Map.of("Alice", 90, "Bob", 75)); // wrap to make this mutable
+
     // access
     System.out.println("Get Alice: " + map.get("Alice")); // 95
     System.out.println("Get unknown: " + map.get("Zara")); // null

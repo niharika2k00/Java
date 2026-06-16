@@ -19,3 +19,6 @@ public class StringMethods {
     System.out.println("   Bye   ".trim()); // Removes white spaces
   }
 }
+
+// read all string methods like .toCharArray() etc
+// https://www.w3schools.com/java/java_ref_string.asp

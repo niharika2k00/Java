@@ -22,6 +22,12 @@ public class ListDemo {
     list.add(1, 99); // add(int index, Object element) | add at index 1 → [10, 99, 20, 30]
     System.out.println("Original list: " + list);
 
+    // create list of products
+    List<Product> products = new ArrayList<>();
+    products.add(new Product(1, "Laptop", 75000.0));
+    products.add(new Product(2, "Mouse", 500.0));
+    products.add(new Product(3, "Keyboard", 1200.0));
+
     // ⭐️⭐️ other ways of declaring list
     /*
     List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
@@ -82,3 +88,35 @@ public class ListDemo {
 
 // https://www.geeksforgeeks.org/java/arraylist-in-java/
 // https://www.w3schools.com/JAVA/java_collections.asp
+
+class Product {
+  private int id;
+  private String name;
+  private double price;
+
+  // Constructor
+  public Product(int id, String name, double price) {
+    this.id = id;
+    this.name = name;
+    this.price = price;
+  }
+
+  // Getters (and setters if needed)
+  public int getId() {
+    return id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public double getPrice() {
+    return price;
+  }
+
+  // Optional but recommended for printing
+  @Override
+  public String toString() {
+    return "Product{id=" + id + ", name='" + name + "', price=" + price + "}";
+  }
+}

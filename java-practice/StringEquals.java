@@ -67,5 +67,12 @@ public class StringEquals {
     System.out.println(a == b); // false — outside cache, new objects
     System.out.println(a.equals(b)); // true — always use equals()
 
+    String str = "aabccdeff";
+
+    // Step 1 — count frequency of each character
+    Map<Character, Integer> map = new LinkedHashMap<>();
+    for (char c : str.toCharArray()) {
+      map.put(c, map.getOrDefault(c, 0) + 1);
+    }
   }
 }
